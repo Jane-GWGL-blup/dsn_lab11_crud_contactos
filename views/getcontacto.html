@@ -124,9 +124,7 @@
   <script>
 
     function fill_form(contacto) {
-        console.log(contacto)
-        console.log(typeof(contacto))
-        console.log(JSON.parse(contacto))
+        
         dataContacto = JSON.parse(contacto);  
         
         document.getElementById("nombre").value=dataContacto.nombre;
