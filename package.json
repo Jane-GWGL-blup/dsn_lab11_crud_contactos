@@ -1,0 +1,30 @@
+{
+  "name": "dsn_lab05",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "start": "node -r esm app.js",
+    "dev": "nodemon -r esm app.js"
+  },
+  "author": "ncaceres",
+  "license": "ISC",
+  "keywords": [
+    "nodejs",
+    "bootstrap",
+    "express"
+  ],
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "esm": "^3.2.25",
+    "express": "^4.18.1",
+    "mongoose": "^6.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

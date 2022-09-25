@@ -1,0 +1,76 @@
+.navbar {
+    margin-bottom: 0;
+}
+
+body {
+    background: rgb(76, 83, 119);
+    color: #ffffff;
+    font-family: 'Merriweather', sans-serif;
+}
+
+h1,
+h2 {
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.jumbotron {
+    background: rgb(10, 29, 99);
+    color: white;
+    text-align: center;
+}
+
+.jumbotron p {
+    color: white;
+    font-size: 26px;
+}
+
+.btn-primary {
+    color: #fff;
+    background:  rgb(10, 99, 72);
+    text-color: #000000;
+    border-color: white;
+    margin-bottom: 5px;
+}
+
+img,
+video,
+audio {
+    margin-top: 10px;
+    max-width: 80%;
+}
+
+div.caption {
+    float: left;
+    clear: both;
+}
+thead{
+    background-color: rgb(10, 29,99);
+}
+
+tbody{
+    background-color: rgb(19, 91, 158);
+}
+
+.button{
+    background:  rgb(30, 123, 14);
+    color: white;
+
+}
+
+.infop{
+   color: rgb(45, 191, 32);
+}
+
+.info{
+    font-size: 12px;
+}
+
+.btnAction{
+    border: none;
+    background-color: rgb(18, 85, 148);
+}
