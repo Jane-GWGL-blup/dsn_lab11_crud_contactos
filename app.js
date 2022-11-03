@@ -14,5 +14,5 @@ app.use(express.static(path));
 app.use('/contactos', contactos);
 
 app.listen(port, function () {
-  console.log('Example app listening on port 6005 !')
+  console.log(`App listening on port ${port}!`)
 })

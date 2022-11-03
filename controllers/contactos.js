@@ -57,8 +57,10 @@ exports.deleteContacto = async (req, res) => {
         Contacto.findByIdAndRemove(id,function(err, contacto){
                 if(err){
                         return res.send(500, err);
+                        
                 }else{
                         res.redirect('/contactos');
+                       
                 }
         });
     }

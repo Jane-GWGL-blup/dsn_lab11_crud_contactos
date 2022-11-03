@@ -10,7 +10,7 @@ router.post('/addcontacto', function(req, res) {
     contactos.create(req,res);
 });
 
-router.delete('/deletecontacto/:id', function(req, res) {
+router.get('/deletecontacto/:id', function(req, res) {
     contactos.deleteContacto(req,res);
 });
 

@@ -26,8 +26,6 @@
     <h1>Contactos</h1>
 </div>
 <div class="container">
-
-            <a class="btn btn-success" href="contactos.html">Crear Contactos</a>
                 <p>
                 <center>
                     <table class="table table-hover ">
@@ -69,9 +67,9 @@
                                     
                                         <button class="btnAction">
                                         
-                                            <i  id="/contactos/deletecontacto/<%= contacto._id %>" 
-                                                onclick="delete_row(this.id)" 
-                                                class="fa-solid fa-user-xmark"></i>
+                                            <a  id="/contactos/deletecontacto/<%= contacto._id %>" 
+                                                href="/contactos/deletecontacto/<%= contacto._id %>" 
+                                                class="fa-solid fa-user-xmark"></a>
                                             
                                         </button>
                                     </center>
@@ -87,8 +85,8 @@
         <div class="mx-auto">
                 <div class="col py-2">
                     <form action="/contactos/addcontacto" method="post" id="form" >
-                        <div class="infop"><h6 class="caption ">Formulario para editar sus datos</h6></div>
-                        <p class="info">Click en el botón de editar</p>
+                        <div class="infop"><h6 class="caption ">Formulario para editar o crear su registro de contacto</h6></div>
+                        <p class="info">Click en el botón de editar si quiere editar su contacto</p>
                         <div class="form-group row">
                             <div class="col-sm-10">
                                 <input type="text" class="form-control" id="nombre" placeholder="Nombre" name="nombre">
@@ -121,24 +119,6 @@
                 </div>
         </div> 
     </div>
-  <script>
-
-    function fill_form(contacto) {
-        
-        dataContacto = JSON.parse(contacto);  
-        
-        document.getElementById("nombre").value=dataContacto.nombre;
-        document.getElementById("apellido").value=dataContacto.apellido;
-        document.getElementById("email").value=dataContacto.email;
-        document.getElementById("telefono").value=dataContacto.telefono;
-        document.getElementById("direccion").value=dataContacto.direccion;
-        document.getElementById("_id").value=dataContacto._id;
-    };
-    function delete_row(route) {
-        console.log(route)
-        fetch(route,  {
-            method: 'DELETE'
-        })
-    }
+  <script src="js/code.js">
   </script>
 </html>
